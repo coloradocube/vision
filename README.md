@@ -29,8 +29,8 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 7. On rotating platform, segment objects and alert for proximity with 1 camera and LIDAR. Sensor fusion in software. Need WiFi to see the segmentation. 
 8. Dynamically reprogram to do (6) or (7).
 9. Do (6) and (7) simultaneously.
-10. In addition to (9), mount and connect a digital compass (e.g. [this](https://www.amazon.com/Digital-Compass-Magnetometer-Electronic-Magnetic/dp/B07PP67N9Q) connects over I2C). Stabilize to the orientation of choice with software on Kria, including compass directions and degrees. Overlay the 3D directions over the image like a virtual nautical compass. Need WiFi to see it. Sensor fusion in software.
-11. In a planetarium, on rotating platform, without LIDAR or compass (may use as training signal), stabilize to the orientation of choice. Overlay celestial object names and constellations on view.
+10. **In addition to (9), mount and connect a digital compass (e.g. [this](https://www.amazon.com/Digital-Compass-Magnetometer-Electronic-Magnetic/dp/B07PP67N9Q) connects over I2C). Stabilize to the orientation of choice with software on Kria, including compass directions and degrees. Overlay the 3D directions over the image like a virtual nautical compass. Need WiFi to see it. Sensor fusion in software.**
+11. **In a planetarium, on rotating platform, without LIDAR or compass (may use as training signal), stabilize to the orientation of choice. Overlay celestial object names and constellations on view.**
 
 #### 1.2. Custom carrier
 
@@ -39,26 +39,33 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 14. Perform (3) with multiple cameras.
 15. Perform (4) with multiple cameras.
 16. Perform (6) with multiple cameras. Compare to single-camera by switching in software or dynamically reprogramming, if necessary. Examine dependence of quality on rotational speed. Total angle covered at every moment and remaining gaps.
-17. Perform (10) with multiple cameras.
+17. **Perform (10) with multiple cameras.**
+18. **Perform (11) with multiple cameras.**
 
 ### 2. Outdoors
 
 #### 2.1. Kit carrier
 
 18. On [Sugarloaf](https://www.summitpost.org/sugarloaf-mountain-boulder-co/445263), perform (11).
-19. On drone, with 1 camera, dynamically reprogram among face recognition, follow me, and segmentation.
+19. On drone, with 1 camera, dynamically reprogram among face recognition, follow me, and segmentation. _Note that the drone has an IMU to add to sensor fusion!_
 20. On drone, with 1 camera, perform autonomous flight with photogrametry-based stitching of a 3D model of some structure for autonomous inspection.
 21. Add defect inspection to (20).
-22. Add 360 degree object avoidance to (21).
-23. 
+22. **Add 360 degree object avoidance to (21).** _May the [Wings Over the Rockies Museum](https://wingsmuseum.org/museum/) allow me to image one of their airplanes?_
 
 #### 2.2. Custom carrier
 
+23. Perform (22) with multiple cameras.
+24. **With multiple cameras, GPS and IMU, demonstrate autonomous waypoint to waypoint flight with automoatic local obstacle avoidance (e.g. crossing Rock Creek through the trees) between waypoints.**
 
 ### Custom carrier requirements
 
-1. Battery power.
-2. 6 camera connectors. _How can the maximum number of cameras be connected electrically?_
-3. Compass (I2C).
-4. GPS (I2C).
-5. LIDAR (UART).
+1. 95 mm x 95 mm.
+2. Battery power.
+3. 6+2 camera connectors. _How can the maximum number of cameras be connected electrically?_
+4. 9-DOF IMU.
+5. Compass (I2C), if not integrated into IMU.
+6. GPS (I2C).
+7. LIDAR (UART).
+8. WiFi.
+9. Antenna on carrier.
+10. CAN integration into CubeSat bus.
