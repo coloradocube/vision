@@ -30,7 +30,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 8. Dynamically reprogram to do (6) or (7).
 9. Do (6) and (7) simultaneously.
 10. **In addition to (9), mount and connect a digital compass (e.g. [this](https://www.amazon.com/Digital-Compass-Magnetometer-Electronic-Magnetic/dp/B07PP67N9Q) connects over I2C). Stabilize to the orientation of choice with software on Kria, including compass directions and degrees. Overlay the 3D directions over the image like a virtual nautical compass. Need WiFi to see it. Sensor fusion in software.**
-11. **In a planetarium, on rotating platform, without LIDAR or compass (may use as training signal), stabilize to the orientation of choice. Overlay celestial object names and constellations on view.**
+11. **In a planetarium, on rotating platform, without LIDAR or compass (may use as training signal), stabilize to the orientation of choice. Overlay celestial object names and constellations on view.** _Does the [Denver Planetarium](https://www.dmns.org/visit/planetarium/) actually have a [dome star projector](https://www.zeiss.com/planetariums/us/about-us/image-download/planetarium-projectors.html)?_
 
 #### 1.2. Custom carrier
 
