@@ -69,3 +69,4 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 8. WiFi.
 9. Antenna on carrier.
 10. CAN integration into CubeSat bus.
+11. Full localization (e.g. u-blox), if not integrated into GPS.
