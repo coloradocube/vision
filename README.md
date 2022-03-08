@@ -30,19 +30,27 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 8. Dynamically reprogram to do (6) or (7).
 9. Do (6) and (7) simultaneously.
 10. In addition to (9), mount and connect a digital compass (e.g. [this](https://www.amazon.com/Digital-Compass-Magnetometer-Electronic-Magnetic/dp/B07PP67N9Q) connects over I2C). Stabilize to the orientation of choice with software on Kria, including compass directions and degrees. Overlay the 3D directions over the image like a virtual nautical compass. Need WiFi to see it. Sensor fusion in software.
+11. In a planetarium, on rotating platform, without LIDAR or compass (may use as training signal), stabilize to the orientation of choice. Overlay celestial object names and constellations on view.
 
 #### 1.2. Custom carrier
 
-11. Perform (1) with multiple cameras.
-12. Perform (2) with multiple cameras.
-13. Perform (3) with multiple cameras.
-14. Perform (4) with multiple cameras.
-15. Perform (6) with multiple cameras. Compare to single-camera by dynamically reprogramming.
-16. Perform (10) with multiple cameras.
+12. Perform (1) with multiple cameras.
+13. Perform (2) with multiple cameras.
+14. Perform (3) with multiple cameras.
+15. Perform (4) with multiple cameras.
+16. Perform (6) with multiple cameras. Compare to single-camera by switching in software or dynamically reprogramming, if necessary. Examine dependence of quality on rotational speed. Total angle covered at every moment and remaining gaps.
+17. Perform (10) with multiple cameras.
 
 ### 2. Outdoors
 
 #### 2.1. Kit carrier
+
+18. On [Sugarloaf](https://www.summitpost.org/sugarloaf-mountain-boulder-co/445263), perform (11).
+19. On drone, with 1 camera, dynamically reprogram among face recognition, follow me, and segmentation.
+20. On drone, with 1 camera, perform autonomous flight with photogrametry-based stitching of a 3D model of some structure for autonomous inspection.
+21. Add defect inspection to (20).
+22. Add 360 degree object avoidance to (21).
+23. 
 
 #### 2.2. Custom carrier
 
@@ -50,4 +58,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 ### Custom carrier requirements
 
 1. Battery power.
-2. 
+2. 6 camera connectors. _How can the maximum number of cameras be connected electrically?_
+3. Compass (I2C).
+4. GPS (I2C).
+5. LIDAR (UART).
