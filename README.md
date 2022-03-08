@@ -63,10 +63,11 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 2. Battery power.
 3. 6+2 camera connectors. _How can the maximum number of cameras be connected electrically?_
 4. 9-DOF IMU.
-5. Compass (I2C), if not integrated into IMU.
+5. Compass (I2C), if not integrated with IMU.
 6. GPS (I2C).
 7. LIDAR (UART).
 8. WiFi.
 9. Antenna on carrier.
 10. CAN integration into CubeSat bus.
-11. Full localization (e.g. u-blox), if not integrated into GPS.
+11. Full localization (e.g. u-blox), if not integrated with GPS.
+12. Full comms (incl. cellular), if not integrated with WiFi.
