@@ -59,6 +59,8 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 
 ### Custom carrier requirements
 
+#### 1. Ground and air version
+
 1. 95 mm x 95 mm.
 2. Battery power.
 3. 6+2 camera connectors. _How can the maximum number of cameras be connected electrically?_
@@ -71,3 +73,10 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 10. CAN integration into CubeSat bus.
 11. Full localization (e.g. u-blox), if not integrated with GPS.
 12. Full comms (incl. cellular), if not integrated with WiFi.
+
+#### 2. Space version
+
+13. Space-grade components.
+14. Memory scrubber.
+15. Space comms.
+16. ROS & robotics SLAM.
