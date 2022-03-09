@@ -90,6 +90,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 
 1. Cameras.
    1. Hyperspectral camera module (like [OV4682](https://www.e-consystems.com/blog/camera/camera-board/ov4682-multispectral-camera-module-launched/) which doesn't look to be available).
+   2. The [NavQ]()https://nxp.gitbook.io/8mmnavq/'s camera is a [Google Coral Model CA1](https://coral.ai/products/camera/), and is [MIPI-CSI](https://resources.mipi.org/blog/a-look-under-the-hood-at-mipi-csi-2-and-mipi-dsi-2-in-automotive) connectable.
 2. Absolute orientation module.
 
 ### Fabrication
@@ -98,3 +99,9 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 2. Add space for LIDAR to (1).
 3. Drone mount for Kria original carrier, battery power, and 4 cameras.
 5. (TBD) Drone mount for LIDAR. _No power solution yet. Best to investigate connecting Kria and LIDAR to drone batteries, either separate battery or from a doubled-up batteries, but this is well outside the lift capacity in the current configuration._
+
+### Power
+
+1. Kria K26 requires 5v.
+2. RPLIDAR 3 requires 5v.
+3. RDDRONE-FMUK66 requires 3.3v. The power module drawing from the battery-to-PDB connector looks custom. It's based on the [Monolythic Power MP1584EN step-down converter](https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP1584EN-LF-Z/document_id/204). ([MP2338](https://www.monolithicpower.com/en/mp2338.html) is recommended for new designs.) There are similar products available (e.g. this [adjustable DC-DC buck converter module](https://www.amazon.com/MP1584EN-DC-DC-Converter-Adjustable-Module/dp/B01MQGMOKI?th=1)). The prominent 4R7 is a power inductor. _Note: The drone's power converter is a "pass-through" with 6 lines coming out to the FMUK66 (1 red and 5 black) while the main battery-to-PDB continues on both ends._
