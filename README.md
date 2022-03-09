@@ -84,9 +84,17 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 ### Notes
 
 * optical rate gyro
+* camera configuration can be 1 high-quality (hyperspectral) looking forward (for autonomous inspection) and 3 small ones on the sides (for 360° obstacle avoidance)
 
 ### Procurement
 
+1. Cameras.
+   1. Hyperspectral camera module (like [OV4682](https://www.e-consystems.com/blog/camera/camera-board/ov4682-multispectral-camera-module-launched/) which doesn't look to be available).
+2. Absolute orientation module.
+
 ### Fabrication
 
-
+1. Rotating platform mount for Kria original carrier, battery power, and camera(s). _Denver library [idealab](https://www.denverlibrary.org/idealab3D)!_
+2. Add space for LIDAR to (1).
+3. Drone mount for Kria original carrier, battery power, and 4 cameras.
+5. (TBD) Drone mount for LIDAR. _No power solution yet. Best to investigate connecting Kria and LIDAR to drone batteries, either separate battery or from a doubled-up batteries, but this is well outside the lift capacity in the current configuration._
