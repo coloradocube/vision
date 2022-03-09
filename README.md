@@ -80,3 +80,13 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 14. Memory scrubber.
 15. Space comms.
 16. ROS & robotics SLAM.
+
+### Notes
+
+* optical rate gyro
+
+### Procurement
+
+### Fabrication
+
+
