@@ -93,7 +93,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
    2. The [NavQ]()https://nxp.gitbook.io/8mmnavq/'s camera is a [Google Coral Model CA1](https://coral.ai/products/camera/), and is [MIPI-CSI](https://resources.mipi.org/blog/a-look-under-the-hood-at-mipi-csi-2-and-mipi-dsi-2-in-automotive) connectable.
 2. Absolute orientation module.
 
-### Fabrication
+### 3D printing
 
 1. Rotating platform mount for Kria original carrier, battery power, and camera(s). _Denver library [idealab](https://www.denverlibrary.org/idealab3D)!_
 2. Add space for LIDAR to (1).
