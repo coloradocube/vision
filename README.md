@@ -67,7 +67,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 4. 9-DOF IMU.
 5. Compass (I2C), if not integrated with IMU.
 6. GPS (I2C).
-7. LIDAR (UART).
+7. LIDAR (UART). _Consider fusion in software vs hardware._
 8. WiFi.
 9. Antenna on carrier.
 10. CAN integration into CubeSat bus.
@@ -76,7 +76,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 
 #### 2. Space version
 
-13. Space-grade components.
+13. Space-grade, rad-hard components.
 14. Memory scrubber.
 15. Space comms.
 16. ROS & robotics SLAM.
