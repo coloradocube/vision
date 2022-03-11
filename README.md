@@ -85,6 +85,7 @@ The projects have to be feasible on the ground or in the air up to 50 m per FCC 
 
 * optical rate gyro
 * camera configuration can be 1 high-quality (hyperspectral) looking forward (for autonomous inspection) and 3 small ones on the sides (for 360° obstacle avoidance)
+* low-battery identification and soft shutdown
 
 ### Procurement
 
